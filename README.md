@@ -89,7 +89,12 @@ In `apps.py`:
 class YourAppNameConfig(AppConfig):
     name = "your_app_name"
 ```
+### 5. Update the MANIFEST.in
 
+```
+recursive-include your_app_name/templates *
+recursive-include your_app_name/static *
+```
 ---
 
 ## `pyproject.toml` Explained
@@ -120,6 +125,10 @@ where = ["."]
 You only need to edit the package name and author information.
 
 ---
+## Installation (using git)
+```
+pip install git+https://github.com/M-mehdiAhmadi/Reusable-Django-App-Template.git
+```
 
 ## Installation (after publishing)
 
